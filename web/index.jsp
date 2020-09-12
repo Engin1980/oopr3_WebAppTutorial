@@ -1,16 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Marek Vajgl
-  Date: 10.09.2020
-  Time: 19:09
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
   <head>
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <c:set var="datum" value="1" />
+  <c:if test="${datum == 1}">
+    Hodnota je jedna.
+  </c:if>
   </body>
 </html>

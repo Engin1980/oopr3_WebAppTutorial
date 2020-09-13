@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Books" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.derby:derbyclient:10.15.2.0" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derbyshared:10.15.2.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:jakarta.persistence:2.2.3" />
+        </element>
       </element>
     </root>
   </artifact>

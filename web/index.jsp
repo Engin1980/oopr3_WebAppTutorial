@@ -1,3 +1,5 @@
+<%@ page import="javax.persistence.EntityManagerFactory" %>
+<%@ page import="javax.persistence.EntityManager" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -5,9 +7,9 @@
     <title>$Title$</title>
   </head>
   <body>
-  <c:set var="datum" value="1" />
-  <c:if test="${datum == 1}">
-    Hodnota je jedna.
-  </c:if>
+  <%
+    EntityManagerFactory emf = javax.persistence.Persistence.createEntityManagerFactory("BooksPU");
+    EntityManager em = emf.createEntityManager();
+  %>
   </body>
 </html>

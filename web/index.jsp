@@ -29,6 +29,12 @@
                     </c:choose>
                 </c:forEach>
             </td>
+            <td>
+                <form method="post" action="deleteBook">
+                    <input type="hidden" value="${book.bookid}"/>
+                    <button type="submit">(Delete)</button>
+                </form>
+            </td>
         </tr>
     </c:forEach>
 </table>

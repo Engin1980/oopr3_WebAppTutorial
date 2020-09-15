@@ -16,3 +16,8 @@ div.ratingOn{
 div.ratingOff{
     background-image: url('starOff.png');
 }
+
+label{
+    width: 100px;
+    display: inline-block;
+}

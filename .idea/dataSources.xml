@@ -7,5 +7,15 @@
       <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
       <jdbc-url>jdbc:derby://localhost:1527/BooksDB</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="BooksPU/EclipseLink" uuid="57d02e81-00d0-4331-9802-7059f20a445a">
+      <driver-ref>derby.remote</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>EclipseLink
+
+C:/Users/Marek Vajgl/Documents/IdeaProjects/Books/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://localhost:1527/BooksDB</jdbc-url>
+    </data-source>
   </component>
 </project>

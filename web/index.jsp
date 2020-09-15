@@ -32,11 +32,21 @@
             <td>
                 <form method="post" action="deleteBook">
                     <input type="hidden" name="bookId" value="${book.bookid}"/>
-                    <button type="submit">(Delete)</button>
+                    <button type="submit">(Smazat)</button>
                 </form>
             </td>
         </tr>
     </c:forEach>
 </table>
+<h3>Přidání nové knihy</h3>
+<form method="post" action="addBook">
+    <label for="title">Název: </label>
+    <input name="title" id="title" type="text" maxlength="64"/>
+    <br/>
+    <label for="author">Autor: </label>
+    <input name="author" id="author" type="text" maxlength="256"/>
+    <br/>
+    <button type="submit">Uložit novou knihu</button>
+</form>
 </body>
 </html>

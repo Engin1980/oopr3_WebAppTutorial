@@ -4,17 +4,31 @@
 <html>
 <head>
     <title>Přehled knih</title>
+    <link type="text/css" rel="stylesheet" href="resources/books.css">
 </head>
 <body>
 <table>
     <tr>
-        <th> Název knihy</th>
-        <th> Autor knihy</th>
+        <th>Název knihy</th>
+        <th>Autor knihy</th>
+        <th>Hodnocení</th>
     </tr>
     <c:forEach var="book" items="${bookService.all}">
         <tr>
             <td>${book.title}</td>
             <td>${book.author}</td>
+            <td>
+                <c:forEach var="i" begin="0" end="10" step="1">
+                    <c:choose>
+                        <c:when test="${i <= book.rating}">
+                            <div class="rating ratingOn"></div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="rating ratingOff"></div>
+                        </c:otherwise>
+                    </c:choose>
+                </c:forEach>
+            </td>
         </tr>
     </c:forEach>
 </table>
